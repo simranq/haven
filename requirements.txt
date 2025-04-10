@@ -1,4 +1,18 @@
-fastapi
-uvicorn
-psycopg2
-sqlalchemy
+# Core Requirements
+fastapi==0.109.2
+uvicorn==0.27.0
+
+# Database
+sqlalchemy==2.0.28
+psycopg2-binary==2.9.9  # or psycopg2 for production
+
+# Authentication
+python-jose[cryptography]==3.3.0
+passlib==1.7.4
+
+# Validation
+pydantic==2.6.4
+email-validator==2.1.1
+
+# Development Extras (optional)
+python-dotenv==1.0.1
