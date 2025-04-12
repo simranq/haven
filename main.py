@@ -17,6 +17,8 @@ Base.metadata.create_all(bind=engine)
 # Initialize FastAPI app
 app = FastAPI()
 
+print(f"Database URL: {SQLALCHEMY_DATABASE_URL}")
+
 # OAuth2 scheme
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
