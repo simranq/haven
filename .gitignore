@@ -172,3 +172,57 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ----- Python Specific -----
+__pycache__/
+*.py[cod]
+*.so
+.python-version
+
+# Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Build/Distribution
+build/
+dist/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Testing/coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ----- Frontend Specific -----
+# Node
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/dist/
+frontend/.cache/
+frontend/package-lock.json  # Keep if using npm, remove if using yarn/pnpm
+
+# Build files
+frontend/.next/       # Next.js
+frontend/.svelte-kit/ # SvelteKit
+frontend/.nuxt/       # Nuxt.js
+
+# ----- Database -----
+*.sqlite
+*.sqlite-journal
+
+# ----- System Files -----
+.DS_Store
+Thumbs.db
